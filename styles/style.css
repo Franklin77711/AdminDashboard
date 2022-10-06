@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --avatar1: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/06fbe298931623.5ee79b6a90221.jpg);
+    --avatar2: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/2e80bb98931623.5ee79b6a8f342.jpg);
+    --avatar3: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/8394f798931623.5ee79b6a909ea.jpg);
+    --avatar4: url(https://mir-s3-cdn-cf.behance.net/project_modules/disp/baa20698931623.5ee79b6a8ec2b.jpg);
+}
+
 body{
     height: 100vh;
     width: 100vw;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .everything{
     display: grid;
@@ -42,13 +51,20 @@ h1>img{
 }
 .search{
     grid-area: 1/2/2/5;
+    padding: 20px;
 }
 .search-nav{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
 .profile-nav{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
 }
 
 
@@ -56,4 +72,56 @@ h1>img{
     grid-area: 2/2/5/5;
     background-color: #e1e8f0;
     box-shadow: -1px 3px 5px 2px rgba(0,0,0,0.38) inset;
+}
+
+.profile-pic{
+    background: var(--avatar1) center center / cover no-repeat;
+}
+
+.header-pic{
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    margin: 0 20px 0 20px;
+}
+
+.action-pic{
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+}
+.notification-pic{
+    margin-right: 0;
+}
+.search-nav>input{
+    width: 700px;
+    border-radius: 15px;
+    height: 20px;
+    background-color: #e1e8f0;
+    margin: 0 180px 0 5px;
+    border: none;
+}
+.search-nav>p{
+    font-weight: 500;
+}
+.welcome{
+    width: 400px;
+    margin: 0 300px 0 10px;
+    font-weight: bold;
+    letter-spacing: .1rem;
+}
+.hi{
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+.buttons>button{
+    margin: 10px;
+    width: 110px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    background-color: #1892d3;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
 }
